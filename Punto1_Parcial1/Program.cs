@@ -15,7 +15,7 @@ namespace Punto1_Parcial1
             double venta1 = 500000;
             double venta2 = 450000;
             double venta3 = 100000;
-            double[] ventasTotales = { 500000, 450000, 100000 };
+            
 
             // Calculamos la comision total 
 
