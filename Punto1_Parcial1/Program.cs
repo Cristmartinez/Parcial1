@@ -40,9 +40,17 @@ namespace Punto1_Parcial1
 
             // Vendedor Aplicaria o no al bono extra de 100000
 
+            if (alcanzoObjetivo)  totalMes += 100000;
 
+            //Resultados 
 
+            Console.WriteLine("La Comision Obtenida por las 3 ventas realizadas es: " + comisionTotal ); 
+            Console.WriteLine("El total recibido en el mes es de : "  + totalMes );
+            Console.WriteLine("La venta que te genero mayor comision fue: " + mayorComision );
+            Console.WriteLine("El promedio de comisiones por venta es: " + promedioComision );
 
+            if (alcanzoObjetivo) Console.WriteLine("Bien hecho has logrado obtener el beneficio extra de $100000");
+            else Console.WriteLine("Lo siento no alcanzaste la meta para obtener el beneficio extra");                             
         }
     }
 }
