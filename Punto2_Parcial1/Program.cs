@@ -9,15 +9,15 @@
             double VelocidadTren2 = 100;
 
             //Inicio Recorrido 
-            double Tiempoincial = 10;
+            double Tiempoincial = 11 - 10;
 
             double DistanciaEntreTrenes = VelocidadTren1 * Tiempoincial;
 
-            double timeToCatchUp = DistanciaEntreTrenes / (VelocidadTren2 - VelocidadTren1);
+            double TiempoAlcanzarTren = DistanciaEntreTrenes / (VelocidadTren2 - VelocidadTren1);
 
-            double catchUpTime = timeToCatchUp + 10;
+            double HoraAlcanzarlo = TiempoAlcanzarTren + 10;
 
-            Console.WriteLine($"El segundo tren alcanzará al primer tren a las {catchUpTime}");
+            Console.WriteLine($"El segundo tren alcanzará al primer tren a las {HoraAlcanzarlo}");
         }
     }
 }
