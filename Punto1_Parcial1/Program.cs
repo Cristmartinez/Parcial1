@@ -1,4 +1,6 @@
-﻿namespace Punto1_Parcial1
+﻿using System.Security.Principal;
+
+namespace Punto1_Parcial1
 {
     internal class Program
     {
@@ -18,6 +20,28 @@
             // Calculamos la comision total 
 
             double comisionTotal = ventasTotales.Sum(venta => venta * 0.10);
+
+            //Calculamos el Total obtenido por el vendedor con su sueldo y comisiones
+
+            double totalMes = sueldoBase + comisionTotal;
+
+            //Calculamos la mayor comision obtenida 
+
+            double mayorComision = ventasTotales.Sum((venta) => venta * 0.10);
+
+            // Para calcular promedio de comisiones obtenidas
+
+            double promedioComision = comisionTotal / ventasTotales.Length;
+
+            // validar si el vendedor supera el objetivo de 1000000 de ventas por mes
+
+            double totalVentas = venta1 + venta2 + venta3;
+            bool alcanzoObjetivo = totalVentas >= 1000000;
+
+            // Vendedor Aplicaria o no al bono extra de 100000
+
+
+
 
         }
     }
