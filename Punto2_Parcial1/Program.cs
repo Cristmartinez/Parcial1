@@ -15,7 +15,7 @@
 
             double TiempoAlcanzarTren = DistanciaEntreTrenes / (VelocidadTren2 - VelocidadTren1);
 
-            double HoraAlcanzarlo = TiempoAlcanzarTren + 10;
+            double HoraAlcanzarlo = TiempoAlcanzarTren + 11;
 
             Console.WriteLine($"El segundo tren alcanzará al primer tren a las {HoraAlcanzarlo}");
         }
