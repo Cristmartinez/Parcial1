@@ -15,7 +15,7 @@ namespace Punto1_Parcial1
             double venta1 = 500000;
             double venta2 = 450000;
             double venta3 = 100000;
-            
+            double VentasTotales = venta1 + venta2 + venta3;
 
             // Calculamos la comision total 
 
