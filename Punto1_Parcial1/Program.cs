@@ -16,6 +16,7 @@ namespace Punto1_Parcial1
             double venta2 = 450000;
             double venta3 = 100000;
             double ventasTotales = venta1 + venta2 + venta3;
+
             // Calculamos la comision total 
 
             double comisionTotal = ventasTotales * 0.1;
@@ -24,30 +25,23 @@ namespace Punto1_Parcial1
 
             double totalMes = sueldoBase + comisionTotal;
 
-            //Calculamos la mayor comision obtenida 
-
-            double mayorComision = ventasTotales.Sum((venta) => venta * 0.10);
-
             // Para calcular promedio de comisiones obtenidas
 
-            double promedioComision = comisionTotal / ventasTotales.Length;
+            double promedioComision = comisionTotal / 3; 
 
             // validar si el vendedor supera el objetivo de 1000000 de ventas por mes
 
-            double totalVentas = venta1 + venta2 + venta3;
-            bool alcanzoObjetivo = totalVentas >= 1000000;
+           bool alcanzoObjetivo = ventasTotales >= 1000000;
 
             // Vendedor Aplicaria o no al bono extra de 100000
 
-            if (alcanzoObjetivo)  totalMes += 100000;
+            if (alcanzoObjetivo)  ventasTotales += 100000;
 
             //Resultados 
 
             Console.WriteLine("La Comision Obtenida por las 3 ventas realizadas es: " + comisionTotal ); 
             Console.WriteLine("El total recibido en el mes es de : "  + totalMes );
-            Console.WriteLine("La venta que te genero mayor comision fue: " + mayorComision );
             Console.WriteLine("El promedio de comisiones por venta es: " + promedioComision );
-
             if (alcanzoObjetivo) Console.WriteLine("Bien hecho has logrado obtener el beneficio extra de $100000");
             else Console.WriteLine("Lo siento no alcanzaste la meta para obtener el beneficio extra");                             
         }
