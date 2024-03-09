@@ -15,11 +15,10 @@ namespace Punto1_Parcial1
             double venta1 = 500000;
             double venta2 = 450000;
             double venta3 = 100000;
-            double VentasTotales = venta1 + venta2 + venta3;
-
+            double ventasTotales = venta1 + venta2 + venta3;
             // Calculamos la comision total 
 
-            double comisionTotal = ventasTotales.Sum(venta => venta * 0.10);
+            double comisionTotal = ventasTotales * 0.1;
 
             //Calculamos el Total obtenido por el vendedor con su sueldo y comisiones
 
